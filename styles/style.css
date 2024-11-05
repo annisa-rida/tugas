@@ -1,0 +1,389 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins' ,sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #DAD4B5;
+}
+
+header {
+    background-image: url('https://st.depositphotos.com/1020618/53561/i/450/depositphotos_535617860-stock-photo-freeze-motion-shot-of-rotating.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 30px;
+    padding: 25vh;
+    justify-content: center;
+    text-align: center;
+    color: #F2E8C6;
+}
+
+nav {
+    background-color: #952323;
+    border-radius: 5px;
+    font-size: 3vh;
+    display: flex;
+    color: #F2E8C6;
+    padding: 0px;
+    position: sticky;
+}
+
+nav h1 {
+    flex: 3;
+    padding-left: 20px;
+}
+
+nav h1:hover {
+    color: #F2E8C6;
+}
+
+nav ul {
+    display: flex;
+    padding-inline: 3rem;
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+    flex: 7;
+    padding-top: 10px;
+}
+
+nav a {
+    color: #F2E8C6;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #A73121;
+    background-color: #DAD4B5;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.5s ease-in-out;
+    border-radius: 100px;
+}
+
+button {
+    background-color: #952323;
+    color: #F2E8C6;
+    border-color: #A73121;
+    border: none;
+    display: inline-block;
+}
+
+header button {
+    border-radius: 40px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 6px;
+}
+
+header button:hover {
+    color: #A73121;
+    background-color: #DAD4B5;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.5s ease-in-out;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+main button {
+    color: #952323;
+    background-color: #F2E8C6;
+    font-weight: bold;
+    font-family: 'Poppins';
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 100px;
+    width: 200px;
+}
+
+main button:hover {
+    color: #A73121;
+    background-color: #DAD4B5;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+main {
+    background-color: #F2E8C6;
+    display: flex;
+    margin: 0;
+    padding: 5vh;
+    gap: 2rem;
+}
+
+.container {
+    flex: 70;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 30;
+    width: 50vh;
+}
+
+article h2 {
+    font-size: 40px;
+    color: #F2E8C6;
+    text-align: center;
+    background-color: #952323;
+    border-radius: 100px;
+}
+
+aside h4 {
+    background-color: #952323;
+    color: #F2E8C6;
+    text-align: center;
+    border-radius: 50px;
+}
+
+#rank {
+    background-color: #F2E8C6;
+    padding: 20px;
+    color: #952323;
+    font-size: 1.5em;
+}
+
+ol {
+    font-size: 22px;
+    font-weight: bolder;
+    list-style-position: inside;
+    text-align: center;
+}
+
+ol li {
+    margin-bottom: 20px;
+}
+
+ol img {
+    border-radius: 40px;
+    border-style: solid;
+    width: 200px;
+    height: 200px;
+}
+
+.card {
+    box-shadow: 0px 7px 7px 5px  rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+#menu #resep #cemilan {
+    gap: 10vh; 
+    padding: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #F2E8C6;
+}
+
+.makan {
+    display: flex;
+    gap: 0.2rem;
+    padding: 20px;
+    flex-direction: row;
+}
+
+.menu-left {
+    flex: 5;
+    background-color: #A73121; 
+    color: #F2E8C6; 
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-right {
+    flex: 5;
+    background-color: #A73121; 
+    color: #F2E8C6; 
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    width: 12.5em;
+    height: 12.5em;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+section h3 {
+    font-size: 28px;
+}
+
+#menu img {
+    border-radius: 20px;
+    border-style: solid ;
+    
+}
+
+.resep img {
+    border-radius: 20px;
+    border-style: solid;
+}
+
+.resep {
+    display: flex;
+    gap: 2rem;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.resep-left {
+    flex: 5;
+    background-color: #A73121; 
+    color: #F2E8C6; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.resep-right {
+    flex: 5;
+    background-color: #A73121; 
+    color: #F2E8C6; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cemilan img {
+    border-radius: 20px;
+    border-style: solid;
+}
+
+.cemilan {
+    display: flex;
+    gap: 2rem;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cemilan-left {
+    flex: 5;
+    background-color: #A73121; 
+    color: #F2E8C6; 
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cemilan-right {
+    flex: 5;
+    background-color: #A73121; 
+    color: #F2E8C6; 
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    padding: 2vh;
+    color: #F2E8C6;
+    background-color: #952323;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+    main aside {
+      align-self: center;
+    }
+    .makan {
+        justify-content: center;
+        justify-self: center;
+        flex-wrap: wrap;
+    }
+    aside {
+        width: 60%;
+    }
+    aside h4 {
+        font-size: 25px;
+    }
+    .title {
+        font-size: auto;
+        justify-self: center;
+        align-self: center;
+        
+    }
+    nav h1 {
+        font-size: 40px;
+    }
+    nav ul {
+        font-size: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    
+    .makan {
+        width: 95%;
+        justify-content: center;
+        justify-self: center;
+        flex-wrap: wrap;
+    }
+    .cemilan  {
+        width: 60%;
+        justify-self: center;
+    }
+    .resep {
+        width: 60%;
+        height: 80%;
+        justify-self: center;
+    }
+    aside {
+        width: 60%;
+    }
+    aside h4 {
+        font-size: 20px;
+    }
+    .title {
+        font-size: auto;
+        justify-self: center;
+        align-self: center;
+        
+    }
+    nav h1 {
+        font-size: 30px;
+    }
+    nav ul {
+        font-size: 20px;
+    }
+  }
